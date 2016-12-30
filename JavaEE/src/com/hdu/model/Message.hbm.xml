@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE 	hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.hdu.model.Message" table="message">
+		<composite-id>
+			<key-property name="f_stu" column="f_stu"></key-property>
+			<key-property name="time" column="time"></key-property>
+		</composite-id>
+		
+		<property name="t_stu" />
+		<property name="content" />
+
+
+	</class>
+</hibernate-mapping>
