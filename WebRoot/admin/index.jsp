@@ -19,7 +19,7 @@
   	<img src="assets/img/loading.gif" style="width: 100px; margin: auto;">
   	<%@ include file="admin_footer.jspf" %>
   	<script>
-  		setTimeout(function(){window.location="user_manage.jsp";},2000);
+  		setTimeout(function(){window.location="bsAdmin_query.action";},1500);
   	</script>
   </body>
 </html>

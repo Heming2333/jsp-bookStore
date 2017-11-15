@@ -11,6 +11,7 @@ public class BsAdmin implements java.io.Serializable {
 	private Integer id;
 	private String username;
 	private String password;
+	private String jurisdiction;
 	private String headimg;
 	private String sex;
 	private String birth;
@@ -26,32 +27,35 @@ public class BsAdmin implements java.io.Serializable {
 	}
 
 	/** minimal constructor */
-	public BsAdmin(String username, String password, String telephone,
-			String truename, String idnumber) {
+	public BsAdmin(String username, String password, String jurisdiction,
+			String telephone, String truename, String idnumber) {
 		this.username = username;
 		this.password = password;
+		this.jurisdiction = jurisdiction;
 		this.telephone = telephone;
 		this.truename = truename;
 		this.idnumber = idnumber;
 	}
 
 	/** minimal constructor */
-	public BsAdmin(Integer id, String username, String password, String telephone,
-			String truename, String idnumber) {
+	public BsAdmin(Integer id, String username, String password, String jurisdiction,
+			String telephone, String truename, String idnumber) {
 		this.id = id;
 		this.username = username;
 		this.password = password;
+		this.jurisdiction = jurisdiction;
 		this.telephone = telephone;
 		this.truename = truename;
 		this.idnumber = idnumber;
 	}
 
 	/** full constructor */
-	public BsAdmin(String username, String password, String headimg,
-			String sex, String birth, String telephone, String truename,
-			String idnumber, Integer level) {
+	public BsAdmin(String username, String password, String jurisdiction,
+			String headimg, String sex, String birth, String telephone,
+			String truename, String idnumber, Integer level) {
 		this.username = username;
 		this.password = password;
+		this.jurisdiction = jurisdiction;
 		this.headimg = headimg;
 		this.sex = sex;
 		this.birth = birth;
@@ -85,6 +89,14 @@ public class BsAdmin implements java.io.Serializable {
 
 	public void setPassword(String password) {
 		this.password = password;
+	}
+
+	public String getJurisdiction() {
+		return this.jurisdiction;
+	}
+
+	public void setJurisdiction(String jurisdiction) {
+		this.jurisdiction = jurisdiction;
 	}
 
 	public String getHeadimg() {
