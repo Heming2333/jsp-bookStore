@@ -1,10 +1,9 @@
 ﻿# 基于jsp的中型购书网站
 
-----------
+
 
 ### 项目主要文件结构
 
-----------
 
 .book_store
 
@@ -51,13 +50,13 @@
 └──└─ public
 
 
-----------
+
 
 
 ### 搭建项目环境（SSH）
 
 
-----------
+
 
  - SSH框架：Struts2，Hibernate4，Spring4
  
@@ -66,9 +65,9 @@
     搭建Spring环境 --> 搭建Hibernate环境 --> 整合Spring和Hibernate --> 搭建Struts2环境 --> 整合Spring和Struts2
 
 
-----------
+
 
 ### 数据库（mysql)
 
 
-----------
+
