@@ -1,15 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 ﻿# 基于jsp的中型购书网站
-=======
-﻿### 基于jsp的中型购书网站
->>>>>>> e29a4c45ac9887514ff41bcd2ef64685c6d61b6d
-=======
-﻿### 基于jsp的中型购书网站
->>>>>>> fcfd8b7995471e2374bcf33a7d9b3025c1b3776c
-
-标签（空格分隔）： 毕设
-
 
 ----------
 
@@ -18,27 +7,49 @@
 ----------
 
 .book_store
+
 ├─ src
+
 │  └─ cn.bs
+
 │     ├─ action
+
 │     ├─ dao
+
 │     ├─ └─ impl
+
 │     ├─ filter
+
 │     ├─ listener
+
 │     ├─ model
+
 │     ├─ service
+
 │     ├─ └─ impl
+
 │     ├─ utils
+
 │     ├─ └─ impl
+
 │     ├─ beans.xml
+
 │     ├─ hibernate.cfg.xml
+
 │     └─ struts.xml
+
 └─ WebRoot
+
 │  ├─ META-INF
+
 │  ├─ WEB-INF
+
 │  ├─ └─ web.xml
+
 │  ├─ admin
+
 └──└─ public
+
 
 ----------
 
