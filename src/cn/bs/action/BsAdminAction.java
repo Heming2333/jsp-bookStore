@@ -4,7 +4,6 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 
 import cn.bs.model.BsAdmin;
-import cn.bs.service.BsAdminService;
 
 @Controller("bsAdminAction")
 @Scope("prototype")
@@ -27,16 +26,12 @@ public class BsAdminAction extends BaseAction<BsAdmin> {
 			//}
 		}
 	}
-	
-	public String logout() {
-		session.remove("user");
-	}
 
     public String query() {
 //    	request.put("bsAdminList", bsAdminService.query()); 
     	session.put("bsAdminList", bsAdminService.query()); 
 //    	application.put("bsAdminList", bsAdminService.query()); 
-    	return "index"; 
+    	return "user_manage"; 
     } 
     
     //public String update() {  

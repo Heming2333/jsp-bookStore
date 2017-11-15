@@ -16,6 +16,9 @@
         <property name="password" type="java.lang.String">
             <column name="password" length="50" not-null="true" />
         </property>
+        <property name="jurisdiction" type="java.lang.String">
+            <column name="jurisdiction" length="50" not-null="true" />
+        </property>
         <property name="headimg" type="java.lang.String">
             <column name="headimg" length="50" />
         </property>

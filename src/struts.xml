@@ -13,7 +13,7 @@
         <action name="bsAdmin_*" class="bsAdminAction" method="{1}">  
             <result name="error">/admin/login.jsp</result>
             <result name="success">/admin/index.jsp</result>
-            <result name="index">/admin/index.jsp</result>
+            <result name="user_manage">/admin/user_manage.jsp</result>
         </action> 
         
         <!-- 用来完成系统 请求转发的action,所有的请求都交给execute  

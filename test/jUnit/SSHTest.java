@@ -48,7 +48,7 @@ public class SSHTest {
   
   @Test //测试Hibernate和Spring整合后  
   public void hibernateAndSpring() {  
-	  bsAdminService.update(new BsAdmin(1, "admin","admin","13735501806","yxl","330184199605162628")); //categoryService通过Spring从上面注入进来的
+	  bsAdminService.update(new BsAdmin(1, "admin","最高权限", "admin","13735501806","yxl","330184199605162628")); //categoryService通过Spring从上面注入进来的
       System.out.println("^_^");    
   } 
 }
