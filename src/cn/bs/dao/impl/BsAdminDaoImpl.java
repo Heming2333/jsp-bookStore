@@ -1,8 +1,5 @@
 package cn.bs.dao.impl;
 
-import java.util.List;
-
-import org.springframework.orm.hibernate4.support.HibernateDaoSupport;
 import org.springframework.stereotype.Repository;
 
 import cn.bs.dao.BsAdminDao;

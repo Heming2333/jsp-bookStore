@@ -12,7 +12,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
   <head>
-    <title>用户管理</title>
+    <title>图书管理</title>
     <%@ include file="admin_header.jspf" %>  
   </head>
   
@@ -28,13 +28,13 @@
     				</a>
                 </li>
     			<li>
-    				<a href="bsUser_query.action" class="active-menu waves-effect waves-dark">
+    				<a href="bsUser_query.action" class="waves-effect waves-dark">
     					<i class="fa fa-users"></i> 
     					用户管理
     				</a>
                 </li>
                 <li>
-                	<a href="bsBooks_query.action" class="waves-effect waves-dark">
+                	<a href="bsBooks_query.action" class="active-menu waves-effect waves-dark">
                 		<i class="fa fa-desktop"></i> 
                 		图书管理
                 	</a>
@@ -69,12 +69,12 @@
      <div id="page-wrapper" >
 		  <div class="header"> 
                         <h3 class="page-header">
-                        	用户管理
+                        	图书管理
                         </h3>
 						<ol class="breadcrumb">
 					  <li><a>首页</a></li>
-					  <li><a>用户管理</a></li>
-					  <li class="active">用户列表</li>
+					  <li><a>图书管理</a></li>
+					  <li class="active">图书列表</li>
 					</ol> 
 									
 		</div>
@@ -86,7 +86,7 @@
                     <!-- Advanced Tables -->
                     <div class="card">
                         <div class="card-action">
-                             	用户列表
+                             	图书列表
                         </div>
                         <div class="card-content">
                             <div class="table-responsive">
@@ -100,19 +100,34 @@
                                             	</p>
                                             </th>
                                             <th class="center">
-                                            	用户名
+                                            	书名
 											</th>
                                             <th class="center">
-                                            	头像
+                                            	封面
                                             </th>
                                             <th class="center">
-                                            	是否实名认证
+                                            	作者
                                             </th>
                                             <th class="center">
-                                            	会员等级
+                                            	简介
                                             </th>
                                             <th class="center">
-                                            	注册时间
+                                            	出版社
+                                            </th>
+                                            <th class="center">
+                                            	出版时间
+                                            </th>
+                                            <th class="center">
+                                            	书籍编号
+                                            </th>
+                                            <th class="center">
+                                            	价格
+                                            </th>
+                                            <th class="center">
+                                            	库存
+                                            </th>
+                                            <th class="center">
+                                            	已售
                                             </th>
                                             <th class="center">
                                             	操作
@@ -120,7 +135,7 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <c:forEach items="${sessionScope.bsUserList }" var="bsUser"> 
+                                        <c:forEach items="${sessionScope.bsBooksList }" var="bsBooks"> 
 	                                        <tr class="odd gradeX">
 	                                            <td class="center">
 	                                            	<p>
@@ -129,19 +144,34 @@
 	                                            	</p>
 	                                            </td>
 	                                            <td class="center">
-	                                            	${bsUser.username}
+	                                            	${bsBooks.title}
 	                                            </td>
 	                                            <td class="center">
-	                                            	<img src="${bsUser.headimg}" />
+	                                            	<img src="${bsBooks.img}" />
 	                                            </td>
 	                                            <td class="center">
-	                                            	${bsUser.auth}
+	                                            	${bsBooks.author}
 	                                            </td>
 	                                            <td class="center">
-	                                            	${bsUser.level}
+	                                            	${bsBooks.subtitle}
 	                                            </td>
 	                                            <td class="center">
-	                                            	${bsUser.time}
+	                                            	${bsBooks.publish}
+	                                            </td>
+	                                            <td class="center">
+	                                            	${bsBooks.publishtime}
+	                                            </td>
+	                                            <td class="center">
+	                                            	${bsBooks.number}
+	                                            </td>
+	                                            <td class="center">
+	                                            	${bsBooks.nprice}
+	                                            </td>
+	                                            <td class="center">
+	                                            	${bsBooks.store}
+	                                            </td>
+	                                            <td class="center">
+	                                            	${bsBooks.sale}
 	                                            </td>
 	                                            <td class="center">
 	                                            	<a class="waves-effect waves-light btn"><i class="material-icons left">mode_edit</i>编辑</a>

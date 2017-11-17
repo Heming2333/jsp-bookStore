@@ -12,6 +12,8 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 
 import cn.bs.service.BsAdminService;
+import cn.bs.service.BsBooksService;
+import cn.bs.service.BsUserService;
 
 import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;
@@ -61,6 +63,24 @@ public class BaseAction<T> extends ActionSupport implements RequestAware,Session
 	@Resource
     public void setBsAdminService(BsAdminService bsAdminService) {  
         this.bsAdminService = bsAdminService;  
+    } 
+	
+	
+	@Resource
+    protected BsUserService bsUserService;  
+    
+	@Resource
+    public void setBsUserService(BsUserService bsUserService) {  
+        this.bsUserService = bsUserService;  
+    } 
+	
+	
+	@Resource
+    protected BsBooksService bsBooksService;  
+    
+	@Resource
+    public void setBsBooksService(BsBooksService bsBooksService) {  
+        this.bsBooksService = bsBooksService;  
     } 
 
 	//上传文件工具类

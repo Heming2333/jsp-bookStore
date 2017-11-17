@@ -31,7 +31,7 @@ public class BsAdminAction extends BaseAction<BsAdmin> {
 //    	request.put("bsAdminList", bsAdminService.query()); 
     	session.put("bsAdminList", bsAdminService.query()); 
 //    	application.put("bsAdminList", bsAdminService.query()); 
-    	return "user_manage"; 
+    	return "admin_manage"; 
     } 
     
     //public String update() {  

@@ -785,3 +785,19 @@ padding: 0 15px 0px 15px;
 .prohibit{
 	color: #f44336;
 }
+[type="checkbox"].filled-in:checked+label:before{
+	width: 6px;
+    height: 10px;
+}
+[type="checkbox"].filled-in:checked+label:after,
+[type="checkbox"].filled-in:not(:checked)+label:after{
+	width: 15px;
+    height: 15px;
+}
+[type="checkbox"]+label{
+	height: 15px;
+    padding-left: 15px;
+}
+.table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th{
+	font-size: small;
+}
