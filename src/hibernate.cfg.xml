@@ -23,6 +23,8 @@
 		<property name="show_sql">true</property>
 		<mapping class="cn.bs.model.BsAdmin"></mapping>
 		<mapping resource="cn/bs/model/BsAdmin.hbm.xml" />
+		<mapping resource="cn/bs/model/BsUser.hbm.xml" />
+		<mapping resource="cn/bs/model/BsBooks.hbm.xml" />
 
 	</session-factory>
 
