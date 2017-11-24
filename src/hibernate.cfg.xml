@@ -25,6 +25,13 @@
 		<mapping resource="cn/bs/model/BsAdmin.hbm.xml" />
 		<mapping resource="cn/bs/model/BsUser.hbm.xml" />
 		<mapping resource="cn/bs/model/BsBooks.hbm.xml" />
+		<mapping resource="cn/bs/model/BsOrder.hbm.xml" />
+		<mapping resource="cn/bs/model/BsEval.hbm.xml" />
+		<mapping resource="cn/bs/model/BsQuestion.hbm.xml" />
+		<mapping resource="cn/bs/model/BsAnswer.hbm.xml" />
+		<mapping resource="cn/bs/model/BsBanner.hbm.xml" />
+		<mapping resource="cn/bs/model/BsAddress.hbm.xml" />
+		<mapping resource="cn/bs/model/BsAuth.hbm.xml" />
 
 	</session-factory>
 

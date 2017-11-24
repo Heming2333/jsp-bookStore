@@ -70,6 +70,30 @@ public class BsBooks implements java.io.Serializable {
 		this.store = store;
 		this.sale = sale;
 	}
+	public BsBooks(Integer id, String title, String subtitle, String number, String img,
+			String detailimg, String nprice, String oprice, String author,
+			String publish, String publishtime, String classifyid,
+			String percentage, String postage, String evalid, String integer,
+			String store, String sale) {
+		this.id = id;
+		this.title = title;
+		this.subtitle = subtitle;
+		this.number = number;
+		this.img = img;
+		this.detailimg = detailimg;
+		this.nprice = nprice;
+		this.oprice = oprice;
+		this.author = author;
+		this.publish = publish;
+		this.publishtime = publishtime;
+		this.classifyid = classifyid;
+		this.percentage = percentage;
+		this.postage = postage;
+		this.evalid = evalid;
+		this.integer = integer;
+		this.store = store;
+		this.sale = sale;
+	}
 
 	// Property accessors
 

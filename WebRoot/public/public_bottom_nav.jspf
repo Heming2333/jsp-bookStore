@@ -1,0 +1,82 @@
+<%@ page language="java" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
+
+
+	<!-- Footer Container -->
+	<footer class="footer-container">
+		<!-- Footer Top Container -->
+		<section class="footer-top">
+			<div class="container content">
+				<div class="row">
+					<div class="col-sm-6 col-md-3 box-information">
+						<div class="module clearfix">
+							<h3 class="modtitle">基本信息</h3>
+							<div class="modcontent">
+								<ul class="menu">
+									<li><a href="#">购书网站</a></li>
+									<li><a href="#">毕业设计</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-6 col-md-3 box-service">
+						<div class="module clearfix">
+							<h3 class="modtitle">所用技术</h3>
+							<div class="modcontent">
+								<ul class="menu">
+									<li><a href="#">SSH+JSP</a></li>
+									<li><a href="#">HTML+CSS+JavaScript</a></li>
+									<li><a href="#">MySQL</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-6 col-md-3 box-account">
+						<div class="module clearfix">
+							<h3 class="modtitle">参与改进</h3>
+							<div class="modcontent">
+								<ul class="menu">
+									<li><a href="https://github.com/yuxlan/jsp-bookStore" target="_blank">GitHub</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-6 col-md-3 collapsed-block ">
+						<div class="module clearfix">
+							<h3 class="modtitle">参考链接</h3>
+							<div class="modcontent">
+								<ul class="menu">
+									<li><a href="http://www.bookuu.com/" target="_blank">博库书城</a></li>
+									<li><a href="http://www.dangdang.com/" target="_blank">当当</a></li>
+									<li><a href="https://www.amazon.cn/" target="_blank">亚马逊</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /Footer Top Container -->
+		
+		<!-- Footer Bottom Container -->
+		<div class="footer-bottom-block ">
+			<div class=" container">
+				<div class="row">
+					<div class="col-sm-5 copyright-text">基于JSP的中型购书网站管理系统设计与实现  &copy; 2017.设计与编写: <a href="https://github.com/yuxlan" target="_blank" class="my-name">余小兰</a></div>
+					<div class="col-sm-7">
+						<div class="block-payment text-right"><img src="assets/image/demo/content/name.png" alt="payment" title="payment" ></div>
+					</div>
+					<!--Back To Top-->
+					<div class="back-to-top"><i class="fa fa-angle-up"></i><span> 顶部 </span></div>
+
+				</div>
+			</div>
+		</div>
+		<!-- /Footer Bottom Container -->
+		
+		
+	</footer>

@@ -64,6 +64,21 @@ public class BsAdmin implements java.io.Serializable {
 		this.idnumber = idnumber;
 		this.level = level;
 	}
+	public BsAdmin(Integer id, String username, String password, String jurisdiction,
+			String headimg, String sex, String birth, String telephone,
+			String truename, String idnumber, Integer level) {
+		this.id = id;
+		this.username = username;
+		this.password = password;
+		this.jurisdiction = jurisdiction;
+		this.headimg = headimg;
+		this.sex = sex;
+		this.birth = birth;
+		this.telephone = telephone;
+		this.truename = truename;
+		this.idnumber = idnumber;
+		this.level = level;
+	}
 
 	// Property accessors
 

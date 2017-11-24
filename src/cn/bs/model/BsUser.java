@@ -77,6 +77,29 @@ public class BsUser implements java.io.Serializable {
 		this.level = level;
 		this.time = time;
 	}
+	public BsUser(Integer id,String username, String password, String headimg, String sex,
+			String birth, String telephone, Boolean auth, String carid,
+			String collectid, String evalid, String addressid, String orderid,
+			String money, Long integer, String check, Integer level, Date time) {
+		this.id = id;
+		this.username = username;
+		this.password = password;
+		this.headimg = headimg;
+		this.sex = sex;
+		this.birth = birth;
+		this.telephone = telephone;
+		this.auth = auth;
+		this.carid = carid;
+		this.collectid = collectid;
+		this.evalid = evalid;
+		this.addressid = addressid;
+		this.orderid = orderid;
+		this.money = money;
+		this.integer = integer;
+		this.check = check;
+		this.level = level;
+		this.time = time;
+	}
 
 	// Property accessors
 

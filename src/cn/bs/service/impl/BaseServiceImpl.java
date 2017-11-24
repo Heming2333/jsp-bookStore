@@ -12,7 +12,12 @@ import org.springframework.stereotype.Service;
 
 import cn.bs.dao.BaseDao;
 import cn.bs.dao.BsAdminDao;
+import cn.bs.dao.BsAnswerDao;
+import cn.bs.dao.BsBannerDao;
 import cn.bs.dao.BsBooksDao;
+import cn.bs.dao.BsEvalDao;
+import cn.bs.dao.BsOrderDao;
+import cn.bs.dao.BsQuestionDao;
 import cn.bs.dao.BsUserDao;
 import cn.bs.service.BaseService;
 
@@ -74,6 +79,16 @@ public class BaseServiceImpl<T> implements BaseService<T> {
 	protected BsUserDao bsUserDao;
 	@Resource
 	protected BsBooksDao bsBooksDao;
+	@Resource
+	protected BsOrderDao bsOrderDao;
+	@Resource
+	protected BsEvalDao bsEvalDao;
+	@Resource
+	protected BsQuestionDao bsQuestionDao;
+	@Resource
+	protected BsAnswerDao bsAnswerDao;
+	@Resource
+	protected BsBannerDao bsBannerDao;
 	
 	
     //@Override  

@@ -24,6 +24,26 @@
             <result name="book_manage">/admin/book_manage.jsp</result>
         </action> 
         
+        <action name="bsOrder_*" class="bsOrderAction" method="{1}">  
+            <result name="order_manage">/admin/order_manage.jsp</result>
+        </action> 
+        
+        <action name="bsEval_*" class="bsEvalAction" method="{1}">  
+            <result name="eval_manage">/admin/eval_manage.jsp</result>
+        </action> 
+        
+        <action name="bsAnswer_*" class="bsAnswerAction" method="{1}">  
+            <result name="answer_manage">/admin/answer_manage.jsp</result>
+        </action> 
+        
+        <action name="bsQuestion_*" class="bsQuestionAction" method="{1}">  
+            <result name="question_manage">/admin/question_manage.jsp</result>
+        </action> 
+        
+        <action name="bsBanner_*" class="bsBannerAction" method="{1}">  
+            <result name="banner_manage">/admin/banner_manage.jsp</result>
+        </action> 
+        
         <!-- 用来完成系统 请求转发的action,所有的请求都交给execute  
         <action name="send_*_*" class="sendAction">  
             <result name="send">/WEB-INF/{1}/{2}.jsp</result>  

@@ -12,7 +12,8 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
   <head>
-    <title>后台管理首页</title>
+    <title>loading……</title>
+    <link rel="shortcut icon" href="assets/img/favicon.png">
   </head>
   
   <body style="display: flex; align-items: center; justify-content: center;">
