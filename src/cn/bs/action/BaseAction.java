@@ -12,7 +12,12 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 
 import cn.bs.service.BsAdminService;
+import cn.bs.service.BsAnswerService;
+import cn.bs.service.BsBannerService;
 import cn.bs.service.BsBooksService;
+import cn.bs.service.BsEvalService;
+import cn.bs.service.BsOrderService;
+import cn.bs.service.BsQuestionService;
 import cn.bs.service.BsUserService;
 
 import com.opensymphony.xwork2.ActionSupport;
@@ -57,6 +62,8 @@ public class BaseAction<T> extends ActionSupport implements RequestAware,Session
 	//protected Map<String, Object> pageMap = null;
 	
     //service对象 
+	
+	//管理员
 	@Resource
     protected BsAdminService bsAdminService;  
     
@@ -65,7 +72,7 @@ public class BaseAction<T> extends ActionSupport implements RequestAware,Session
         this.bsAdminService = bsAdminService;  
     } 
 	
-	
+	//用户
 	@Resource
     protected BsUserService bsUserService;  
     
@@ -74,13 +81,58 @@ public class BaseAction<T> extends ActionSupport implements RequestAware,Session
         this.bsUserService = bsUserService;  
     } 
 	
-	
+	//图书
 	@Resource
     protected BsBooksService bsBooksService;  
     
 	@Resource
     public void setBsBooksService(BsBooksService bsBooksService) {  
         this.bsBooksService = bsBooksService;  
+    } 
+	
+	//订单
+	@Resource
+    protected BsOrderService bsOrderService;  
+    
+	@Resource
+    public void setBsOrderService(BsOrderService bsOrderService) {  
+        this.bsOrderService = bsOrderService;  
+    } 
+	
+	//评价
+	@Resource
+    protected BsEvalService bsEvalService;  
+    
+	@Resource
+    public void setBsEvalService(BsEvalService bsEvalService) {  
+        this.bsEvalService = bsEvalService;  
+    } 
+	
+	//问题
+	@Resource
+    protected BsQuestionService bsQuestionService;  
+    
+	@Resource
+    public void setBsQuestionService(BsQuestionService bsQuestionService) {  
+        this.bsQuestionService = bsQuestionService;  
+    } 
+	
+	//回答
+	@Resource
+    protected BsAnswerService bsAnswerService;  
+    
+	@Resource
+    public void setBsAnswerService(BsAnswerService bsAnswerService) {  
+        this.bsAnswerService = bsAnswerService;  
+    } 
+	
+	//图片
+	@Resource
+    protected BsBannerService bsBannerService;  
+    
+	@Resource
+    public void setBsBannerService(BsBannerService bsBannerService) {  
+        this.bsBannerService = bsBannerService;  
     } 
 
 	//上传文件工具类

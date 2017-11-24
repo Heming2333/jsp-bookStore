@@ -40,25 +40,31 @@
                 	</a>
                 </li>
                 <li>
-                	<a href="" class="waves-effect waves-dark">
+                	<a href="bsOrder_query.action" class="waves-effect waves-dark">
                 		<i class="fa fa-bar-chart-o"></i> 
                 		订单管理
                 	</a>
                 </li>
                 <li>
-                	<a href="" class="waves-effect waves-dark">
+                	<a href="bsEval_query.action" class="waves-effect waves-dark">
                 		<i class="fa fa-table"></i> 
                 		评论管理
                 	</a>
                 </li>
                 <li>
-                	<a href="" class="waves-effect waves-dark">
+                	<a href="bsQuestion_query.action" class="waves-effect waves-dark">
                 		<i class="fa fa-edit"></i>
-                		问答管理
+                		问题管理
                 	</a>
                 </li>
                 <li>
-                	<a href="" class="waves-effect waves-dark"> 
+                	<a href="bsAnswer_query.action" class="waves-effect waves-dark">
+                		<i class="fa fa-envelope-open-o"></i>
+                		回答管理
+                	</a>
+                </li>
+                <li>
+                	<a href="bsBanner_query.action" class="waves-effect waves-dark"> 
                 		<i class="fa fa-picture-o"></i> 
                 		图片管理 
                 	</a>
@@ -159,7 +165,7 @@
 	                                            	${bsBooks.publish}
 	                                            </td>
 	                                            <td class="center">
-	                                            	${bsBooks.publishtime}
+													${fn:substring(bsBooks.publishtime,0,10)}
 	                                            </td>
 	                                            <td class="center">
 	                                            	${bsBooks.number}
@@ -188,7 +194,7 @@
                 </div>
             </div>
             <footer>
-           		<p>基于JSP的中型购书网站管理系统设计与实现 @设计与编写: <a href="https://github.com/yuxlan">余小兰</a></p>
+           		<p>基于JSP的中型购书网站管理系统设计与实现 @设计与编写: <a href="https://github.com/yuxlan" target="_blank">余小兰</a></p>
            	</footer>
     	</div>
 	</div>

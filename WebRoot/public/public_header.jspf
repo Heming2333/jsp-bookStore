@@ -1,0 +1,33 @@
+
+	<meta charset="utf-8">
+    <meta name="keywords" content="JSP SSH MySQL JS bookStore" />
+    <meta name="author" content="YuXLan">
+   
+	<!-- Mobile specific metas
+	============================================ -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	
+	<!-- Favicon
+	============================================ -->
+    <link href="assets/image/demo/logos/favicon.png" rel="shortcut icon">
+	
+	<!-- Google web fonts
+	============================================ -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+	
+    <!-- Libs CSS
+	============================================ -->
+    <link href="assets/css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="assets/js/datetimepicker/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <link href="assets/js/owl-carousel/owl.carousel.css" rel="stylesheet">
+	<link href="assets/css/themecss/lib.css" rel="stylesheet">
+	<link href="assets/js/jquery-ui/jquery-ui.min.css" rel="stylesheet">
+	
+	<!-- Theme CSS
+	============================================ -->
+   	<link href="assets/css/themecss/so_megamenu.css" rel="stylesheet">
+    <link href="assets/css/themecss/so-categories.css" rel="stylesheet">
+	<link href="assets/css/themecss/so-listing-tabs.css" rel="stylesheet">
+	<link href="assets/css/theme.css" rel="stylesheet id="color_scheme">
+	<link href="assets/css/responsive.css" rel="stylesheet">

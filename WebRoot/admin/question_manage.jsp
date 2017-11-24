@@ -12,7 +12,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
   <head>
-    <title>管理员列表</title>
+    <title>问题管理</title>
     <%@ include file="admin_header.jspf" %>  
   </head>
   
@@ -22,7 +22,7 @@
     	<div class="sidebar-collapse">
     		<ul class="nav" id="main-menu">
     			<li>
-    				<a href="bsAdmin_query.action" class="active-menu waves-effect waves-dark">
+    				<a href="bsAdmin_query.action" class="waves-effect waves-dark">
     					<i class="fa fa-cogs"></i> 
     					管理员列表
     				</a>
@@ -52,7 +52,7 @@
                 	</a>
                 </li>
                 <li>
-                	<a href="bsQuestion_query.action" class="waves-effect waves-dark">
+                	<a href="bsQuestion_query.action" class="active-menu waves-effect waves-dark">
                 		<i class="fa fa-edit"></i>
                 		问题管理
                 	</a>
@@ -75,12 +75,12 @@
      <div id="page-wrapper" >
 		  <div class="header"> 
                         <h3 class="page-header">
-                        	管理员管理
+                        	问题管理
                         </h3>
 						<ol class="breadcrumb">
 					  <li><a>首页</a></li>
-					  <li><a>管理员管理</a></li>
-					  <li class="active">管理员列表</li>
+					  <li><a>问题管理</a></li>
+					  <li class="active">问题列表</li>
 					</ol> 
 									
 		</div>
@@ -92,7 +92,7 @@
                     <!-- Advanced Tables -->
                     <div class="card">
                         <div class="card-action">
-                             	管理员列表
+                             	问题列表
                         </div>
                         <div class="card-content">
                             <div class="table-responsive">
@@ -106,13 +106,10 @@
                                             	</p>
                                             </th>
                                             <th class="center">
-                                            	用户名
+                                            	提问内容
 											</th>
                                             <th class="center">
-                                            	权限
-                                            </th>
-                                            <th class="center">
-                                            	管理员等级
+                                            	提问时间
                                             </th>
                                             <th class="center">
                                             	操作
@@ -120,7 +117,7 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <c:forEach items="${sessionScope.bsAdminList }" var="bsAdmin"> 
+                                        <c:forEach items="${sessionScope.bsQuestionList }" var="bsQuestion"> 
 	                                        <tr class="odd gradeX">
 	                                            <td class="center">
 	                                            	<p>
@@ -129,15 +126,10 @@
 	                                            	</p>
 	                                            </td>
 	                                            <td class="center">
-	                                            	${bsAdmin.username}
+	                                            	${bsQuestion.content}
 	                                            </td>
 	                                            <td class="center">
-	                                            	${bsAdmin.jurisdiction}
-	                                            </td>
-	                                            <td class="center">
-	                                            	${bsAdmin.level}
-	                                            	<!-- <i class="material-icons prohibit">not_interested</i> -->
-	                                            	<!-- <i class="material-icons not_prohibit">done_all</i> -->
+													${fn:substring(bsQuestion.time,0,10)}
 	                                            </td>
 	                                            <td class="center">
 	                                            	<a class="waves-effect waves-light btn"><i class="material-icons left">mode_edit</i>编辑</a>
@@ -145,26 +137,6 @@
 	                                            </td>
 	                                        </tr> 
 									    </c:forEach>
-                                    <!-- 
-                                        <tr class="odd gradeX">
-                                            <td class="center">
-                                            	<p>
-                                            	 	<input type="checkbox" class="filled-in" id="filled-in-box-1" />
-                                            	 	<label for="filled-in-box-1"></label>
-                                            	</p>
-                                            </td>
-                                            <td class="center"></td>
-                                            <td class="center"></td>
-                                            <td class="center">
-                                            	<i class="material-icons prohibit">not_interested</i>
-                                            	<i class="material-icons not_prohibit">done_all</i>
-                                            </td>
-                                            <td class="center">
-                                            	<a class="waves-effect waves-light btn"><i class="material-icons left">mode_edit</i>编辑</a>
-                                            	<a class="waves-effect waves-light btn btn_1"><i class="material-icons left">cloud</i>删除</a>
-                                            </td>
-                                        </tr>
-                                          -->
                                     </tbody>
                                 </table>
                             </div>
@@ -174,7 +146,7 @@
                 </div>
             </div>
             <footer>
-           		<p>基于JSP的中型购书网站管理系统设计与实现 &copy; 设计与编写: <a href="https://github.com/yuxlan" target="_blank">余小兰</a></p>
+           		<p>基于JSP的中型购书网站管理系统设计与实现 @设计与编写: <a href="https://github.com/yuxlan" target="_blank">余小兰</a></p>
            	</footer>
     	</div>
 	</div>
